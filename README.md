@@ -39,4 +39,3 @@ Just open `index.html` in your browser. Click "Start Game", choose your difficul
 ## Technologies Used
 
 I built this using HTML, CSS, and JavaScript. No frameworks or libraries needed - just pure web technologies.
-
