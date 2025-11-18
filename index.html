@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+            <h1 class="intro-title">Tic Tac Toe</h1>
+            <p class="intro-subtitle">Challenge the Computer</p>
+            <button class="intro-start-btn" id="introStartBtn">Start Game</button>
+        </div>
+    </div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <main class="neon-stage">
+        <h1 class="game-title">Tic Tac Toe</h1>
+        <header class="difficulty-bar" role="radiogroup" aria-label="Difficulty levels">
+            <button class="diff-btn active" data-level="beginner" aria-checked="true" role="radio">Beginner</button>
+            <button class="diff-btn" data-level="medium" aria-checked="false" role="radio">Medium</button>
+            <button class="diff-btn" data-level="advanced" aria-checked="false" role="radio">Advanced</button>
+        </header>
+
+        <section class="arena">
+            <div class="confetti confetti-left" aria-hidden="true"></div>
+            <div class="confetti confetti-right" aria-hidden="true"></div>
+
+            <div class="grid-stack">
+                <div class="status-row">
+                    <div class="status-chip" id="statusBanner" role="status" aria-live="polite">
+                        Choose your side to start
+                    </div>
+                    <div class="players">
+                        <button class="player-toggle active" data-player="X" aria-pressed="true">Play as X</button>
+                        <button class="player-toggle" data-player="O" aria-pressed="false">Play as O</button>
+                    </div>
+                </div>
+
+                <div class="board-shell">
+                    <div id="board" class="board" role="grid" aria-label="TicTacToe board">
+                        <button class="cell" role="gridcell" data-index="0"></button>
+                        <button class="cell" role="gridcell" data-index="1"></button>
+                        <button class="cell" role="gridcell" data-index="2"></button>
+                        <button class="cell" role="gridcell" data-index="3"></button>
+                        <button class="cell" role="gridcell" data-index="4"></button>
+                        <button class="cell" role="gridcell" data-index="5"></button>
+                        <button class="cell" role="gridcell" data-index="6"></button>
+                        <button class="cell" role="gridcell" data-index="7"></button>
+                        <button class="cell" role="gridcell" data-index="8"></button>
+                    </div>
+                </div>
+
+                <div class="score-row" aria-live="polite">
+                    <div class="score-card" data-player="X">
+                        <span>X Wins</span>
+                        <strong id="scoreX">0</strong>
+                    </div>
+                    <div class="score-card" data-player="draw">
+                        <span>Draws</span>
+                        <strong id="scoreDraw">0</strong>
+                    </div>
+                    <div class="score-card" data-player="O">
+                        <span>O Wins</span>
+                        <strong id="scoreO">0</strong>
+                    </div>
+                </div>
+
+                <button id="restartBtn" class="ghost-btn">Restart match</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
