@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Game 
+# Tic-Tac-Toe Game
 
 A web-based Tic Tac Toe game I built using HTML, CSS, and JavaScript. You can play against the computer with three different difficulty levels.
 
