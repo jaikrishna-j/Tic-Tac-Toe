@@ -2,6 +2,8 @@
 
 A web-based Tic Tac Toe game I built using HTML, CSS, and JavaScript. You can play against the computer with three different difficulty levels.
 
+Live demo: https://jaikrishna-j.github.io/Tic-Tac-Toe/ 
+
 ## About This Project
 
 I created this Tic Tac Toe game as a fun project. It has a nice pixel-art style with a night sky background. The computer opponent has three difficulty levels, so you can choose how challenging you want the game to be.
